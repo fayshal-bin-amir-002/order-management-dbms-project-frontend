@@ -21,7 +21,7 @@ import { useRouter } from "next/navigation";
 const formSchema = z.object({
   name: z.string().min(1, "Name Required"),
   email: z.string().min(1, "Email Required"),
-  password: z.string().min(1, "Password Required"),
+  password: z.string().min(6, "Minimum 6 characters"),
 });
 
 const RegisterForm = () => {
