@@ -12,7 +12,7 @@ import {
 import { logout } from "@/services/auth";
 import { getNavData } from "@/utils/SidebarData";
 import Link from "next/link";
-import { redirect, usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export function AppSidebar({ user }: any) {
   const pathname = usePathname();

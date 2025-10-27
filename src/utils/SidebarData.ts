@@ -14,6 +14,7 @@ export const getNavData = (role?: Role): NavData => {
     case "admin":
       return {
         navMain: [
+          { title: "Dashboard", url: "/admin/dashboard" },
           { title: "Products", url: "/admin" },
           { title: "Manage Products", url: "/admin/manage-products" },
           { title: "Customers", url: "/admin/customers" },

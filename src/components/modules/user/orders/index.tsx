@@ -23,8 +23,6 @@ const UserOrdersManagement = ({ id }: UserOrdersManagementProps) => {
       const res = await getCustomerAllOrders(id);
       if (res?.success) {
         setOrders(res.data || []);
-      } else {
-        toast.error(res?.message || "Failed to fetch orders");
       }
     } catch (err) {
       console.error(err);

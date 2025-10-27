@@ -42,7 +42,6 @@ const RegisterForm = () => {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       const res = await registerUser(values);
-      console.log(res);
       if (res?.success) {
         form.reset();
         toast.success(res?.message);
